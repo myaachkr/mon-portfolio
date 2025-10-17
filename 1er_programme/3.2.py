@@ -1,0 +1,2 @@
+def sommeChiffres (x):
+    
