@@ -1,0 +1,232 @@
+
+:root {
+    --rose1: #e9bbd0;
+    --rose2: #b96f90;
+    --rose3: #cfa4ba;
+    --rose4: #d19eb6;
+    --rose5: #c80063;
+    --gris: #dddddd;
+    --blanc: #ffffff;
+    --texte: #333333;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--texte);
+    line-height: 1.6;
+    margin: 0;
+    background: var(--blanc);
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, var(--rose1), var(--rose3));
+    border-bottom: 3px solid var(--rose4);
+}
+
+header figure {
+    margin: 0 auto 15px;
+}
+
+header img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--rose2);
+}
+
+header figcaption {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blanc);
+    margin-top: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--blanc);
+    margin: 15px 0 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 15px 0 0;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--rose5);
+    font-weight: 600;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+}
+
+header nav a:hover {
+    background-color: var(--blanc);
+    color: var(--rose2);
+}
+
+header nav a.active {
+    background-color: var(--blanc);
+    color: var(--rose2);
+    border: 2px solid var(--rose5);
+}
+
+#intro-contact {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: linear-gradient(135deg, #ffeef5, #ffe4f0);
+    border-radius: 12px;
+}
+
+#intro-contact h2 {
+    color: var(--rose5);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#intro-contact p {
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+#informations {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#informations h2 {
+    color: var(--rose4);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--rose3);
+}
+
+.contact-card {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: var(--blanc);
+    border-radius: 12px;
+    border: 2px solid var(--rose1);
+}
+
+.contact-card h3 {
+    color: var(--rose5);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--rose2);
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    color: var(--texte);
+}
+
+dd a {
+    color: var(--rose5);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+dd a:hover {
+    text-decoration: underline;
+    color: var(--rose2);
+}
+
+/* --- Liste des réseaux sociaux --- */
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list li {
+    margin-bottom: 15px;
+}
+
+.social-list a {
+    color: var(--rose5);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffeef5;
+    border-radius: 8px;
+    border: 2px solid var(--rose1);
+}
+
+.social-list a:hover {
+    background-color: var(--rose1);
+    color: var(--blanc);
+    border-color: var(--rose5);
+}
+
+.social-list a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.8em;
+    color: #999999;
+}
+
+.contact-card ul {
+    list-style: "✿ ";
+    padding-left: 25px;
+    margin: 0;
+}
+
+.contact-card ul li {
+    margin-bottom: 8px;
+    color: var(--texte);
+}
+
+footer {
+    color: var(--blanc);
+    text-align: center;
+    padding: 20px;
+    background: var(--rose2);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffe4f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--blanc);
+    text-decoration: underline;
+}

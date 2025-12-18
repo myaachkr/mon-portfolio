@@ -1,0 +1,174 @@
+
+:root {
+    --rose1: #e9bbd0;
+    --rose2: #b96f90;
+    --rose3: #cfa4ba;
+    --rose4: #d19eb6;
+    --rose5: #c80063;
+    --gris: #dddddd;
+    --blanc: #ffffff;
+    --texte: #333333;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--texte);
+    line-height: 1.6;
+    margin: 0;
+    background: var(--blanc);
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, var(--rose1), var(--rose3));
+    border-bottom: 3px solid var(--rose4);
+}
+
+header figure {
+    margin: 0 auto 15px;
+}
+
+header img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--rose2);
+}
+
+header figcaption {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blanc);
+    margin-top: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--blanc);
+    margin: 15px 0 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 15px 0 0;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--rose5);
+    font-weight: 600;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+}
+
+header nav a:hover {
+    background-color: var(--blanc);
+    color: var(--rose2);
+}
+
+header nav a.active {
+    background-color: var(--blanc);
+    color: var(--rose2);
+    border: 2px solid var(--rose5);
+}
+
+#introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: linear-gradient(135deg, #ffeef5, #ffe4f0);
+    border-radius: 12px;
+}
+
+#introduction h2 {
+    color: var(--rose5);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#introduction p {
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+#liste-projets {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#liste-projets h2 {
+    color: var(--rose4);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--rose3);
+}
+
+.projet-card {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: var(--blanc);
+    border-radius: 12px;
+    border: 2px solid var(--rose1);
+}
+
+.projet-card h3 {
+    color: var(--rose5);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.projet-card p {
+    color: var(--texte);
+    margin-bottom: 15px;
+}
+
+.btn-projet {
+    display: inline-block;
+    color: var(--blanc);
+    background-color: var(--rose5);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-projet:hover {
+    background-color: var(--rose2);
+    color: var(--blanc);
+}
+
+footer {
+    color: var(--blanc);
+    text-align: center;
+    padding: 20px;
+    background: var(--rose2);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffe4f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--blanc);
+    text-decoration: underline;
+}

@@ -1,106 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio de Mya</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function showPage(pageId) {
-            document.querySelectorAll("section").forEach(s => s.style.display = "none");
-            document.getElementById(pageId).style.display = "block";
-            window.scrollTo(0, 0);
-        }
-
-        window.onload = () => showPage("accueil");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mya El Achkar</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header id="haut" role="banner" aria-label="En-tête du site">
+        <figure role="img" aria-labelledby="figcaption-mya">
+            <img src="images/Mya.jpg" alt="Photo de Mya El Achkar">
+            <figcaption id="figcaption-mya">Mya El Achkar</figcaption>
+        </figure>
 
-<nav>
-    <a href="#" onclick="showPage('accueil')">Accueil</a>
-    <a href="#" onclick="showPage('apropos')">À propos</a>
-    <a href="#" onclick="showPage('projets')">Mes projets</a>
-    <a href="#" onclick="showPage('competences')">Mes compétences</a>
-    <a href="#" onclick="showPage('contact')">Me contacter</a>
-</nav>
-
-<section id="accueil">
-    <header>
-        <h1>Bienvenue sur mon portfolio !</h1>
-        <p>Découvrez mon univers ✨</p>
+        <h1>Portfolio de Mya El Achkar</h1>
+        
+        <nav role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/projets.html">Projets</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <footer>
-        <svg id="wave" viewBox="0 0 1440 320">
-            <path fill="#daa3beff">
-<animate attributeName="d" dur="8s" repeatCount="indefinite"
-                    values="
-                M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,165.3C672,171,768,181,864,176C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+    <main role="main">
+        <nav role="navigation" aria-label="Navigation interne à la page">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-                M0,96L48,122.7C96,149,192,203,288,213.3C384,224,480,192,576,170.7C672,149,768,139,864,149.3C960,160,1056,192,1152,213.3C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+        <section id="about" role="region" aria-labelledby="titre-about">
+            <h2 id="titre-about">À propos</h2>
+            <p>Je m'appelle <strong>Mya El Achkar</strong>, j'ai 18 ans et je suis franco-libanaise.</p>
+            <p>J'ai fait mes études à Jean Paul II à Sartrouville et j'ai obtenu un bac général (spé maths et physique). 👩🏽‍🎓</p>
+            <p>Je suis actuellement en <strong>L1 LAS Maths</strong>. 🖩</p>
+        </section>
 
-                M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,202.7C672,192,768,192,864,176C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-                " />
-            </path>
-        </svg>
+        <section id="competences" role="region" aria-labelledby="titre-competences">
+            <h2 id="titre-competences">Compétences</h2>
+            <ul>
+                <li>Mathématiques</li>
+                <li>Physique</li>
+                <li>HTML & CSS</li>
+                <li>Analyse de données</li>
+            </ul>
+        </section>
+
+        <section id="passions" role="region" aria-labelledby="titre-passions">
+            <h2 id="titre-passions">Mes Passions</h2>
+            <ul>
+                <li>🎶 La musique</li>
+                <li>🎨 L'art</li>
+                <li>⚽ Le sport</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo" aria-label="Pied de page">
+        <p>© 2025 <strong>Mya El Achkar</strong>. Tous droits réservés. | <a href="#haut">Haut de page</a></p>
     </footer>
-</section>
-
-<section id="apropos" class="background-waves">
-    <h2>À propos</h2>
-    <article>
-        <img src=Mya.jpg>
-        <p>Je m’appelle <strong>Mya El Achkar</strong>, j’ai 18 ans et je suis franco-libanaise.</p>
-        <p>J'ai fais mes études à Jean Paul II à Sartrouville.</p>
-        <p>J’ai obtenu un bac général (spé maths et physique).👩🏽‍🎓</p>
-        <p>Je suis actuellement en <strong>L1 LAS Maths</strong>.🖩</p>
-        <p>J'aime la musique, l'art et le sport.🎶</p>
-    </article>
-</section>
-
-<section id="projets">
-    <h2>Mes projets</h2>
-    <article>
-        <img src=projet.jpg>
-        <ul>
-            <li>Projet inspiré de la mode : un compte Pinterest rempli d'inspiration !</li>
-            <li>Projet d'influence : compte Instagram, Tiktok...📱</li>
-            <li>Projet association : bénévolat dans l'association Aires10🤍</li>
-            <li>Projet cuisine : émission Top Chef🔪</li>
-            <li>Projet découverte : voyager dans multiples pays✈️</li>
-        </ul>
-    </article>  
-</section>
-
-
-<section id="competences">
-    <h2>Mes compétences</h2>
-    <article>
-        <img src=competence.jpg>
-        <ul>
-            <li>Je sais cuisiner🧑‍🍳</li>
-            <li>Je sais résoudre des problèmes mathématiques📚</li>
-            <li>Très bonne organisation!</li>
-            <li>J'ai de l'experience dans la mode🎀</li>
-            <li>Je m'occupe bien des enfants🎈</li>
-        </ul>
-    </article>
-</section>
-
-
-<section id="contact">
-    <h2>Me contacter</h2>
-    <article>
-        <p>Pour me contacter :</p>
-        <ul>
-            <li>Email : <a href="mailto:myaelachkar@gmail.com">myaelachkar@gmail.com</a></li>
-            <li>Instagram : <a href="https://instagram.com/mya.chkr" target="_blank">mya.chkr</a></li>
-            <li>Téléphone : 0651579898</li>
-        </ul>
-    </article>
-</section>
-
 </body>
 </html>
